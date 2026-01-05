@@ -1,0 +1,71 @@
+
+body {
+  background-color: #121212; /* තද කළු */
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sporty Card Design */
+.car-card {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s ease; /* Smooth Animation */
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/*  (Sporty Lift & Glow) */
+.car-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: #ff3b30; /* Racing Red Border */
+  box-shadow: 0 10px 30px rgba(255, 59, 48, 0.3); /* Red Glow */
+}
+
+
+.car-image-container {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+
+.car-card:hover .car-image {
+  transform: scale(1.1);
+}
+
+
+.card-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.price-tag {
+  color: #ff3b30; /* Racing Red */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+.animate-fade-in {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
