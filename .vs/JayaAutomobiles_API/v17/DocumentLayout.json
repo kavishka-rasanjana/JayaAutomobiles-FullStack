@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\jayaautomobiles_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\jayaautomobiles_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,80 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Models\\Car.cs",
-              "RelativeDocumentMoniker": "JayaAutomobiles_API\\Models\\Car.cs",
-              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Models\\Car.cs",
-              "RelativeToolTip": "JayaAutomobiles_API\\Models\\Car.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T10:21:03.297Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "JayaAutomobiles_API.csproj",
-              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\JayaAutomobiles_API.csproj",
-              "RelativeDocumentMoniker": "JayaAutomobiles_API\\JayaAutomobiles_API.csproj",
-              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\JayaAutomobiles_API.csproj",
-              "RelativeToolTip": "JayaAutomobiles_API\\JayaAutomobiles_API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-02T10:16:22.607Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Program.cs",
-              "RelativeDocumentMoniker": "JayaAutomobiles_API\\Program.cs",
-              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Program.cs",
-              "RelativeToolTip": "JayaAutomobiles_API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\appsettings.json",
+              "RelativeDocumentMoniker": "JayaAutomobiles_API\\appsettings.json",
+              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\appsettings.json*",
+              "RelativeToolTip": "JayaAutomobiles_API\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-05T07:08:27.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "JayaAutomobiles_API\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Services\\UserService.cs",
+              "RelativeToolTip": "JayaAutomobiles_API\\Services\\UserService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAqwBkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T10:14:05.636Z",
+              "WhenOpened": "2026-01-05T07:04:22.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CarService.cs",
-              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Services\\CarService.cs",
-              "RelativeDocumentMoniker": "JayaAutomobiles_API\\Services\\CarService.cs",
-              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Services\\CarService.cs",
-              "RelativeToolTip": "JayaAutomobiles_API\\Services\\CarService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAywBEAAAAMAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "JayaAutomobiles_API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "JayaAutomobiles_API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAA2wF4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T10:12:13.538Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CarsController.cs",
-              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Controllers\\CarsController.cs",
-              "RelativeDocumentMoniker": "JayaAutomobiles_API\\Controllers\\CarsController.cs",
-              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Controllers\\CarsController.cs",
-              "RelativeToolTip": "JayaAutomobiles_API\\Controllers\\CarsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T10:06:31.479Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\appsettings.json",
-              "RelativeDocumentMoniker": "JayaAutomobiles_API\\appsettings.json",
-              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\appsettings.json",
-              "RelativeToolTip": "JayaAutomobiles_API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-02T09:57:24.55Z",
+              "WhenOpened": "2026-01-05T06:56:17.35Z",
               "EditorCaption": ""
             }
           ]

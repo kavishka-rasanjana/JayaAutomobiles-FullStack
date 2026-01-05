@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JayaAutomobiles_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+527e14648f1da40d3e4ed1f1aa85a715ac49555f")]
 [assembly: System.Reflection.AssemblyProductAttribute("JayaAutomobiles_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JayaAutomobiles_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

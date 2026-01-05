@@ -1,7 +1,7 @@
 ﻿using JayaAutomobiles_API.Models;
-using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
-using MongoDB.Bson;
+using MongoDB.Bson; // Regex සඳහා අවශ්‍යයි
 
 namespace JayaAutomobiles_API.Services
 {
@@ -11,35 +11,35 @@ namespace JayaAutomobiles_API.Services
 
         public CarService(IConfiguration config)
         {
-            // Get connection string from appsettings.json
-            var connectionString = config.GetConnectionString("MongoDbConnection");
-            var databaseName = config["DatabaseName"];
-
-            var mongoClient = new MongoClient(connectionString);
-            var mongoDatabase = mongoClient.GetDatabase(databaseName);
-
-            // Connect to the "Cars" collection in the database
+            var mongoClient = new MongoClient(config.GetConnectionString("MongoDbConnection"));
+            var mongoDatabase = mongoClient.GetDatabase(config["DatabaseName"]);
             _carsCollection = mongoDatabase.GetCollection<Car>("Cars");
         }
 
-        // Method to get all cars
+        // --- CRUD Operations ---
+
         public async Task<List<Car>> GetAsync() =>
             await _carsCollection.Find(_ => true).ToListAsync();
 
-        // Method to get a single car by ID
         public async Task<Car?> GetAsync(string id) =>
             await _carsCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 
-        // Method to create a new car
         public async Task CreateAsync(Car newCar) =>
             await _carsCollection.InsertOneAsync(newCar);
 
-        // Method to search cars by Brand or Model
-        public async Task<List<Car>> SearchAsync(string text)
+        public async Task UpdateAsync(string id, Car updatedCar) =>
+            await _carsCollection.ReplaceOneAsync(x => x.Id == id, updatedCar);
+
+        public async Task RemoveAsync(string id) =>
+            await _carsCollection.DeleteOneAsync(x => x.Id == id);
+
+        // --- 👇 අලුතෙන් එකතු කළ කොටස (Search Fix) 👇 ---
+        public async Task<List<Car>> SearchAsync(string term)
         {
+            // Brand එක හෝ Model එකේ වචන ගැලපේද බලනවා (Case-insensitive)
             var filter = Builders<Car>.Filter.Or(
-                Builders<Car>.Filter.Regex("Brand", new BsonRegularExpression(text, "i")),
-                Builders<Car>.Filter.Regex("Model", new BsonRegularExpression(text, "i"))
+                Builders<Car>.Filter.Regex(x => x.Brand, new BsonRegularExpression(term, "i")),
+                Builders<Car>.Filter.Regex(x => x.Model, new BsonRegularExpression(term, "i"))
             );
 
             return await _carsCollection.Find(filter).ToListAsync();

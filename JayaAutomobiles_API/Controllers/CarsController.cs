@@ -45,6 +45,8 @@ namespace JayaAutomobiles_API.Controllers
 
         // කාර් Search කරන්න
         [HttpGet("search/{text}")]
+        [ProducesResponseType(StatusCodes.Status201Created)] // 201 ආවොත් ඒක පෙන්නන්න කියනවා
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<List<Car>> Search(string text)
         {
             return await _carService.SearchAsync(text);
