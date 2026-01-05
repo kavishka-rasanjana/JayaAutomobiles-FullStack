@@ -16,7 +16,7 @@ namespace JayaAutomobiles_API.Services
             _usersCollection = mongoDatabase.GetCollection<User>("Users");
         }
 
-        // Username එක හරියටම ගැලපෙන කෙනා හොයනවා
+        
         public async Task<User?> GetByUsernameAsync(string username) =>
             await _usersCollection.Find(x => x.Username == username).FirstOrDefaultAsync();
 

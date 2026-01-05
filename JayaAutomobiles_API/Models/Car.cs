@@ -5,7 +5,7 @@ namespace JayaAutomobiles_API.Models
 {
     public class Car
     {
-        // MongoDB ID එක ස්වයංක්‍රීයව අකුරු (ObjectId) විදිහට හැදෙනවා
+       
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }

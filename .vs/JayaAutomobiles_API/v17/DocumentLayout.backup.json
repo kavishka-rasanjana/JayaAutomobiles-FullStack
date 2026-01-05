@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|c:\\users\\krasa\\desktop\\project1\\jayaautomobiles_api\\jayaautomobiles_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{504D0649-EB5D-4401-BA7A-BC5F3C90E625}|JayaAutomobiles_API\\JayaAutomobiles_API.csproj|solutionrelative:jayaautomobiles_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,25 +55,129 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Program.cs",
+              "RelativeDocumentMoniker": "JayaAutomobiles_API\\Program.cs",
+              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Program.cs*",
+              "RelativeToolTip": "JayaAutomobiles_API\\Program.cs*",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAE8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:51:02.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "JayaAutomobiles_API\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\WeatherForecast.cs",
+              "RelativeToolTip": "JayaAutomobiles_API\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:51:11.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarService.cs",
+              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Services\\CarService.cs",
+              "RelativeDocumentMoniker": "JayaAutomobiles_API\\Services\\CarService.cs",
+              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Services\\CarService.cs*",
+              "RelativeToolTip": "JayaAutomobiles_API\\Services\\CarService.cs*",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAAEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:49:43.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "JayaAutomobiles_API\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Models\\User.cs",
+              "RelativeToolTip": "JayaAutomobiles_API\\Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:49:38.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "JayaAutomobiles_API\\Models\\Car.cs",
+              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Models\\Car.cs*",
+              "RelativeToolTip": "JayaAutomobiles_API\\Models\\Car.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:49:29.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Dtos\\UserDto.cs",
+              "RelativeDocumentMoniker": "JayaAutomobiles_API\\Dtos\\UserDto.cs",
+              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Dtos\\UserDto.cs",
+              "RelativeToolTip": "JayaAutomobiles_API\\Dtos\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:49:24.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "JayaAutomobiles_API\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Services\\UserService.cs*",
               "RelativeToolTip": "JayaAutomobiles_API\\Services\\UserService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T07:04:22.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "JayaAutomobiles_API\\Controllers\\CarsController.cs",
+              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Controllers\\CarsController.cs*",
+              "RelativeToolTip": "JayaAutomobiles_API\\Controllers\\CarsController.cs*",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAADYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:48:12.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\appsettings.json",
+              "RelativeDocumentMoniker": "JayaAutomobiles_API\\appsettings.json",
+              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\appsettings.json",
+              "RelativeToolTip": "JayaAutomobiles_API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-05T07:08:27.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "JayaAutomobiles_API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "JayaAutomobiles_API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAA2wF4AAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Controllers\\AuthController.cs*",
+              "RelativeToolTip": "JayaAutomobiles_API\\Controllers\\AuthController.cs*",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAGMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T06:56:17.35Z",
               "EditorCaption": ""

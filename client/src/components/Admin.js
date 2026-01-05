@@ -1,27 +1,55 @@
 import React, { useEffect } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Button, Row, Col } from 'react-bootstrap';
 import AddCar from './AddCar'; 
-import { useNavigate } from 'react-router-dom'; // Navigate පාවිච්චි කරන්න ඕන
+import { useNavigate } from 'react-router-dom';
 
 const Admin = () => {
+  // Hook to navigate programmatically
   const navigate = useNavigate();
 
+  // useEffect runs once when the component mounts to check authentication
   useEffect(() => {
-    // Page එක Load වෙද්දී Token එක තියෙනවද බලනවා
+    // 1. Retrieve the JWT token from local storage
     const token = localStorage.getItem('token');
     
+    // 2. If no token is found, redirect the user to the Login page
     if (!token) {
-      // Token එක නැත්නම් Login එකට එළවනවා
-      alert("Please login first!");
+      alert("Access Denied! Please login first.");
       navigate('/login');
     }
-  }, [navigate]);
+  }, [navigate]); // Dependency array ensures this runs when navigate changes (usually once)
+
+  // Function to handle Logout
+  const handleLogout = () => {
+    // 1. Remove the token from storage (Security best practice)
+    localStorage.removeItem('token');
+    
+    // 2. Redirect back to Login page
+    navigate('/login');
+  };
 
   return (
     <Container className="mt-5">
-      <h2 className="text-center mb-4 text-danger">Admin Dashboard</h2>
-      {/* ... අනිත් කෝඩ් ටික එහෙමම තියන්න ... */}
-      <AddCar />
+      
+      {/* Header Section with Title and Logout Button */}
+      <Row className="mb-4 align-items-center">
+        <Col>
+          <h2 className="text-danger">Admin Dashboard</h2>
+        </Col>
+        <Col className="text-end">
+          <Button variant="outline-dark" onClick={handleLogout}>
+            Logout
+          </Button>
+        </Col>
+      </Row>
+
+      <hr />
+
+      {/* Render the AddCar component */}
+      <div className="mt-4">
+        <AddCar />
+      </div>
+
     </Container>
   );
 };

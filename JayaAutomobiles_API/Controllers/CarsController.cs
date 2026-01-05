@@ -1,6 +1,5 @@
 ﻿using JayaAutomobiles_API.Models;
 using JayaAutomobiles_API.Services;
-using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JayaAutomobiles_API.Controllers
@@ -11,22 +10,26 @@ namespace JayaAutomobiles_API.Controllers
     {
         private readonly CarService _carService;
 
+        // Constructor: Injecting CarService dependency to handle database operations
         public CarsController(CarService carService)
         {
             _carService = carService;
         }
 
-        // කාර් ඔක්කොම ගන්න (GET)
+        // Endpoint: GET api/Cars
+        // Summary: Retrieves a list of all available vehicles
         [HttpGet]
         public async Task<List<Car>> Get() =>
             await _carService.GetAsync();
 
-        // තනි කාර් එකක් ගන්න (GET by ID)
+        // Endpoint: GET api/Cars/{id}
+        // Summary: Retrieves a specific vehicle by its unique ID
         [HttpGet("{id}")]
         public async Task<ActionResult<Car>> Get(string id)
         {
             var car = await _carService.GetAsync(id);
 
+            // If the car is not found, return a 404 Not Found response
             if (car is null)
             {
                 return NotFound();
@@ -35,18 +38,20 @@ namespace JayaAutomobiles_API.Controllers
             return car;
         }
 
-       
+        // Endpoint: POST api/Cars
+        // Summary: Adds a new vehicle to the database
         [HttpPost]
         public async Task<IActionResult> Post(Car newCar)
         {
             await _carService.CreateAsync(newCar);
+
+            // Returns a 201 Created response and includes the location of the new resource
             return CreatedAtAction(nameof(Get), new { id = newCar.Id }, newCar);
         }
 
-        // කාර් Search කරන්න
+        // Endpoint: GET api/Cars/search/{text}
+        // Summary: Searches for vehicles matching the given text (Brand or Model)
         [HttpGet("search/{text}")]
-        [ProducesResponseType(StatusCodes.Status201Created)] // 201 ආවොත් ඒක පෙන්නන්න කියනවා
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<List<Car>> Search(string text)
         {
             return await _carService.SearchAsync(text);

@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home searchTerm={searchTerm} />} />
         
-        {/* Login Page එකට පාර */}
+        {}
         <Route path="/login" element={<Login />} />
 
         <Route path="/admin" element={<Admin />} />

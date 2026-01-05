@@ -135,16 +135,7 @@
           "application/json",
           "text/json"
         ],
-        "StatusCode": 201
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
+        "StatusCode": 200
       }
     ]
   },
