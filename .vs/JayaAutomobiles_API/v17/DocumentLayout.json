@@ -62,8 +62,7 @@
               "RelativeToolTip": "JayaAutomobiles_API\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T13:51:02.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-05T13:51:02.431Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "JayaAutomobiles_API\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T13:51:11.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-05T13:51:11.883Z"
             },
             {
               "$type": "Document",
@@ -88,8 +86,7 @@
               "RelativeToolTip": "JayaAutomobiles_API\\Services\\CarService.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAAAEEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T13:49:43.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-05T13:49:43.863Z"
             },
             {
               "$type": "Document",
@@ -101,8 +98,7 @@
               "RelativeToolTip": "JayaAutomobiles_API\\Models\\User.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T13:49:38.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-05T13:49:38.785Z"
             },
             {
               "$type": "Document",
@@ -114,8 +110,7 @@
               "RelativeToolTip": "JayaAutomobiles_API\\Models\\Car.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwAcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T13:49:29.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-05T13:49:29.08Z"
             },
             {
               "$type": "Document",
@@ -127,8 +122,7 @@
               "RelativeToolTip": "JayaAutomobiles_API\\Dtos\\UserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T13:49:24.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-05T13:49:24.68Z"
             },
             {
               "$type": "Document",
@@ -140,8 +134,7 @@
               "RelativeToolTip": "JayaAutomobiles_API\\Services\\UserService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T07:04:22.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-05T07:04:22.029Z"
             },
             {
               "$type": "Document",
@@ -151,7 +144,7 @@
               "RelativeDocumentMoniker": "JayaAutomobiles_API\\Controllers\\CarsController.cs",
               "ToolTip": "C:\\Users\\krasa\\Desktop\\project1\\JayaAutomobiles_API\\JayaAutomobiles_API\\Controllers\\CarsController.cs",
               "RelativeToolTip": "JayaAutomobiles_API\\Controllers\\CarsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T13:48:12.314Z",
               "EditorCaption": ""
@@ -166,8 +159,7 @@
               "RelativeToolTip": "JayaAutomobiles_API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-05T07:08:27.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-05T07:08:27.423Z"
             },
             {
               "$type": "Document",
@@ -179,8 +171,7 @@
               "RelativeToolTip": "JayaAutomobiles_API\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAAAGMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T06:56:17.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-05T06:56:17.35Z"
             }
           ]
         }

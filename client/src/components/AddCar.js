@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Form, Button, Container, Alert } from 'react-bootstrap';
+import { Form, Button, Alert, Row, Col } from 'react-bootstrap';
 
 const AddCar = () => {
 
-  // State to hold form input values
+  // State for form data
   const [carData, setCarData] = useState({
     brand: '',
     model: '',
@@ -13,122 +13,140 @@ const AddCar = () => {
     imageUrl: ''
   });
 
-  // State to handle success or error messages (User Feedback)
+  // State for user feedback messages
   const [message, setMessage] = useState(null);
 
-  // Update state when user types in input fields
+  // Handle input changes
   const handleChange = (e) => {
     setCarData({ ...carData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission and send data to the API
+  // Handle Form Submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      // IMPORTANT: Ensure this matches your running backend port
+      // API Endpoint (Ensure port 7219 is correct)
       const apiUrl = 'https://localhost:7219/api/Cars';
 
-      // Send POST request to backend
+      // Send POST request
       await axios.post(apiUrl, {
         ...carData,
-        year: parseInt(carData.year),   // Convert string input to integer
-        price: parseFloat(carData.price) // Convert string input to float
+        year: parseInt(carData.year),    // Convert to Integer
+        price: parseFloat(carData.price) // Convert to Decimal
       });
 
-      // Show success message to the user
-      setMessage({ type: 'success', text: 'Car added successfully!' });
-
-      // Reset the form fields after successful submission
+      // Show Success Message
+      setMessage({ type: 'success', text: '✅ Vehicle added successfully to the inventory!' });
+      
+      // Clear Form
       setCarData({ brand: '', model: '', year: '', price: '', imageUrl: '' });
+
+      // Auto-hide message after 4 seconds
+      setTimeout(() => setMessage(null), 4000);
 
     } catch (error) {
       console.error("Error adding car:", error);
-      setMessage({ type: 'danger', text: 'Error adding car. Please try again.' });
+      setMessage({ type: 'danger', text: '❌ Failed to add vehicle. Please check connection.' });
     }
   };
 
   return (
-    <Container className="mt-4 p-4 border rounded shadow-sm bg-light" style={{ maxWidth: '600px' }}>
-      <h3 className="text-center mb-4">Add New Vehicle</h3>
-      
-      {/* Display Success/Error Alert if message exists */}
-      {message && <Alert variant={message.type}>{message.text}</Alert>}
+    <>
+      {/* Alert Message Section */}
+      {message && <Alert variant={message.type} className="mb-4 text-center fw-bold">{message.text}</Alert>}
 
       <Form onSubmit={handleSubmit}>
-        
-        {/* Brand Input */}
-        <Form.Group className="mb-3">
-          <Form.Label>Brand</Form.Label>
-          <Form.Control 
-            type="text" 
-            name="brand" 
-            placeholder="Ex: Toyota" 
-            value={carData.brand} 
-            onChange={handleChange} 
-            required 
-          />
-        </Form.Group>
+        <Row>
+          {/* Brand Input */}
+          <Col md={6}>
+            <Form.Group className="mb-3">
+              <Form.Label className="text-muted small text-uppercase fw-bold">Brand Name</Form.Label>
+              <Form.Control 
+                className="custom-input"
+                type="text" 
+                name="brand" 
+                placeholder="Ex: Toyota" 
+                value={carData.brand} 
+                onChange={handleChange} 
+                required 
+              />
+            </Form.Group>
+          </Col>
 
-        {/* Model Input */}
-        <Form.Group className="mb-3">
-          <Form.Label>Model</Form.Label>
-          <Form.Control 
-            type="text" 
-            name="model" 
-            placeholder="Ex: Allion" 
-            value={carData.model} 
-            onChange={handleChange} 
-            required 
-          />
-        </Form.Group>
+          {/* Model Input */}
+          <Col md={6}>
+            <Form.Group className="mb-3">
+              <Form.Label className="text-muted small text-uppercase fw-bold">Model Name</Form.Label>
+              <Form.Control 
+                className="custom-input"
+                type="text" 
+                name="model" 
+                placeholder="Ex: Land Cruiser" 
+                value={carData.model} 
+                onChange={handleChange} 
+                required 
+              />
+            </Form.Group>
+          </Col>
+        </Row>
 
-        {/* Year Input */}
-        <Form.Group className="mb-3">
-          <Form.Label>Year</Form.Label>
-          <Form.Control 
-            type="number" 
-            name="year" 
-            placeholder="Ex: 2018" 
-            value={carData.year} 
-            onChange={handleChange} 
-            required 
-          />
-        </Form.Group>
+        <Row>
+          {/* Year Input */}
+          <Col md={6}>
+            <Form.Group className="mb-3">
+              <Form.Label className="text-muted small text-uppercase fw-bold">Manufactured Year</Form.Label>
+              <Form.Control 
+                className="custom-input"
+                type="number" 
+                name="year" 
+                placeholder="Ex: 2024" 
+                value={carData.year} 
+                onChange={handleChange} 
+                required 
+              />
+            </Form.Group>
+          </Col>
 
-        {/* Price Input */}
-        <Form.Group className="mb-3">
-          <Form.Label>Price (Rs)</Form.Label>
-          <Form.Control 
-            type="number" 
-            name="price" 
-            placeholder="Ex: 8500000" 
-            value={carData.price} 
-            onChange={handleChange} 
-            required 
-          />
-        </Form.Group>
+          {/* Price Input */}
+          <Col md={6}>
+            <Form.Group className="mb-3">
+              <Form.Label className="text-muted small text-uppercase fw-bold">Price (LKR)</Form.Label>
+              <Form.Control 
+                className="custom-input"
+                type="number" 
+                name="price" 
+                placeholder="Ex: 45000000" 
+                value={carData.price} 
+                onChange={handleChange} 
+                required 
+              />
+            </Form.Group>
+          </Col>
+        </Row>
 
         {/* Image URL Input */}
-        <Form.Group className="mb-3">
-          <Form.Label>Image URL</Form.Label>
+        <Form.Group className="mb-4">
+          <Form.Label className="text-muted small text-uppercase fw-bold">Image URL Link</Form.Label>
           <Form.Control 
+            className="custom-input"
             type="text" 
             name="imageUrl" 
-            placeholder="Paste image link here..." 
+            placeholder="Paste the image address here..." 
             value={carData.imageUrl} 
             onChange={handleChange} 
           />
-          <Form.Text className="text-muted">
-            Tip: Copy an image address from Google and paste it here.
+          <Form.Text className="text-muted small">
+            Tip: Right-click an image on Google and select "Copy Image Address"
           </Form.Text>
         </Form.Group>
 
-        <Button variant="primary" type="submit" className="w-100">
-          Add Vehicle
+        {/* Submit Button */}
+        <Button type="submit" className="w-100 btn-automobile py-3 shadow-lg">
+          ADD VEHICLE TO SYSTEM
         </Button>
       </Form>
-    </Container>
+    </>
   );
 };
 
