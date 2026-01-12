@@ -69,3 +69,80 @@ body {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* =========================================
+   MODERN NAVBAR STYLES
+   ========================================= */
+
+/* 1. Glassmorphism Effect for Navbar */
+.modern-navbar {
+  background: rgba(18, 18, 18, 0.95) !important; /* Dark transparent background */
+  backdrop-filter: blur(10px); /* Blur effect behind the navbar */
+  border-bottom: 1px solid #333; /* Subtle bottom border */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+/* 2. Logo Styling */
+.brand-text {
+  font-weight: 800; /* Extra Bold */
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+/* 3. Navigation Links (Hover Effects) */
+.nav-link-custom {
+  color: #e0e0e0 !important; /* Light Grey Text */
+  font-weight: 500;
+  margin-right: 20px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link-custom:hover {
+  color: #ff3b30 !important; /* Change to Red on Hover */
+}
+
+/* Underline Animation on Hover */
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff3b30;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%; /* Full width underline on hover */
+}
+
+/* 4. Search Bar Styling */
+.search-input-modern {
+  background-color: #2c2c2c !important;
+  border: 1px solid #444 !important;
+  color: white !important;
+  border-radius: 25px !important; /* Fully rounded corners */
+  padding-left: 20px !important;
+}
+
+.search-input-modern:focus {
+  background-color: #333 !important;
+  border-color: #ff3b30 !important;
+  box-shadow: 0 0 10px rgba(255, 59, 48, 0.4) !important;
+}
+
+.btn-search-modern {
+  border-radius: 25px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  border: 1px solid #ff3b30;
+  color: #ff3b30;
+  transition: all 0.3s ease;
+}
+
+.btn-search-modern:hover {
+  background-color: #ff3b30;
+  color: white;
+}
