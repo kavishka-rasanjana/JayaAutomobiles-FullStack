@@ -146,3 +146,51 @@ body {
   background-color: #ff3b30;
   color: white;
 }
+/* =========================================
+   PROFESSIONAL FOOTER STYLES
+   ========================================= */
+
+.modern-footer {
+  background-color: #0d0d0d !important; /* Darker than body background */
+  border-top: 1px solid #333; /* Subtle border at the top */
+  color: #adb5bd; /* Muted text color */
+  font-size: 0.9rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+/* Footer Section Headings */
+.footer-title {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+}
+
+/* Footer Links */
+.footer-link {
+  color: #adb5bd;
+  text-decoration: none;
+  display: block; /* Makes links sit on new lines */
+  margin-bottom: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff3b30; /* Turns Red on Hover */
+  transform: translateX(5px); /* Moves slightly to the right */
+}
+
+/* Social Media Icons (Text based for now) */
+.social-icon {
+  font-size: 1.2rem;
+  margin-right: 15px;
+  color: white;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: #ff3b30;
+}
