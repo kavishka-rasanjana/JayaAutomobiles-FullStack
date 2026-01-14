@@ -1,10 +1,29 @@
 
 
-/* 1. Global Body Background */
+
+
 body {
-  background-color: #121212; /* Very dark grey (almost black) */
-  color: #e0e0e0; /* Soft white text for better readability */
+  margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+
+  /* --- BACKGROUND IMAGE CONFIGURATION --- */
+
+  background-image: 
+    
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
+    
+    /* 2. High Quality 4K Image from Unsplash */
+    url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1920&auto=format&fit=crop'); 
+
+  /* Image Settings */
+  background-size: cover;       
+  background-attachment: fixed; 
+  background-position: center;  
+  background-repeat: no-repeat; 
+  
+  min-height: 100vh; 
 }
 
 /* 2. Glassmorphism Card Style (Used in Dashboard) */
@@ -193,4 +212,61 @@ body {
 
 .social-icon:hover {
   color: #ff3b30;
+}
+
+/* =========================================
+   CAR CARD PREMIUM STYLES (GLASS EFFECT)
+   ========================================= */
+
+.car-card {
+  /* Semi-transparent dark background (Glass effect) */
+  background: rgba(40, 40, 40, 0.7) !important;
+  
+  /* Blur the background behind the card */
+  backdrop-filter: blur(10px);
+  
+  /* Subtle white border for separation */
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  
+  /* Rounded corners */
+  border-radius: 15px !important;
+  
+  /* Text color */
+  color: #fff;
+  
+  /* Smooth transition for hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Keeps image inside rounded corners */
+}
+
+/* Hover Effect: Lifts the card up slightly */
+.car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6) !important;
+  border-color: #ff3b30 !important; /* Red border on hover */
+}
+
+/* Image Styling to make all images same size */
+.car-card-img {
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Crop image to fit without stretching */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Year Badge Style */
+.year-badge {
+  background-color: #ff3b30;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Price Tag Style */
+.price-text {
+  color: #ff3b30; /* Red color */
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 }

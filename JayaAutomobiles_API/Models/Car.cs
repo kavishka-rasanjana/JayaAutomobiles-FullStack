@@ -22,7 +22,7 @@ namespace JayaAutomobiles_API.Models
         [BsonElement("Price")]
         public decimal Price { get; set; }
 
-        [BsonElement("ImageUrl")]
-        public string ImageUrl { get; set; } = string.Empty;
+        [BsonElement("ImageUrls")]
+        public List<string> ImageUrls { get; set; } = new List<string>();
     }
 }

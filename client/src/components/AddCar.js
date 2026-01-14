@@ -4,147 +4,106 @@ import { Form, Button, Alert, Row, Col } from 'react-bootstrap';
 
 const AddCar = () => {
 
-  // State for form data
   const [carData, setCarData] = useState({
     brand: '',
     model: '',
     year: '',
     price: '',
-    imageUrl: ''
+    imageUrls: '' // Changed to string input for multiple URLs
   });
 
-  // State for user feedback messages
   const [message, setMessage] = useState(null);
 
-  // Handle input changes
   const handleChange = (e) => {
     setCarData({ ...carData, [e.target.name]: e.target.value });
   };
 
-  // Handle Form Submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // 1. Split the comma-separated string into an array
+    // 2. Trim whitespace from links
+    // 3. Limit to max 5 images
+    const imagesArray = carData.imageUrls
+      .split(',')
+      .map(url => url.trim())
+      .filter(url => url !== "")
+      .slice(0, 5); // Take only first 5 images
+
     try {
-      // API Endpoint (Ensure port 7219 is correct)
       const apiUrl = 'https://localhost:7219/api/Cars';
 
-      // Send POST request
       await axios.post(apiUrl, {
-        ...carData,
-        year: parseInt(carData.year),    // Convert to Integer
-        price: parseFloat(carData.price) // Convert to Decimal
+        brand: carData.brand,
+        model: carData.model,
+        year: parseInt(carData.year),
+        price: parseFloat(carData.price),
+        imageUrls: imagesArray // Send array to backend
       });
 
-      // Show Success Message
-      setMessage({ type: 'success', text: '✅ Vehicle added successfully to the inventory!' });
-      
-      // Clear Form
-      setCarData({ brand: '', model: '', year: '', price: '', imageUrl: '' });
-
-      // Auto-hide message after 4 seconds
+      setMessage({ type: 'success', text: '✅ Vehicle added with images!' });
+      setCarData({ brand: '', model: '', year: '', price: '', imageUrls: '' });
       setTimeout(() => setMessage(null), 4000);
 
     } catch (error) {
       console.error("Error adding car:", error);
-      setMessage({ type: 'danger', text: '❌ Failed to add vehicle. Please check connection.' });
+      setMessage({ type: 'danger', text: '❌ Failed to add vehicle.' });
     }
   };
 
   return (
     <>
-      {/* Alert Message Section */}
-      {message && <Alert variant={message.type} className="mb-4 text-center fw-bold">{message.text}</Alert>}
+      {message && <Alert variant={message.type}>{message.text}</Alert>}
 
       <Form onSubmit={handleSubmit}>
         <Row>
-          {/* Brand Input */}
           <Col md={6}>
             <Form.Group className="mb-3">
-              <Form.Label className="text-muted small text-uppercase fw-bold">Brand Name</Form.Label>
-              <Form.Control 
-                className="custom-input"
-                type="text" 
-                name="brand" 
-                placeholder="Ex: Toyota" 
-                value={carData.brand} 
-                onChange={handleChange} 
-                required 
-              />
+              <Form.Label className="text-white">Brand Name</Form.Label>
+              <Form.Control className="custom-input" type="text" name="brand" value={carData.brand} onChange={handleChange} required />
             </Form.Group>
           </Col>
-
-          {/* Model Input */}
           <Col md={6}>
             <Form.Group className="mb-3">
-              <Form.Label className="text-muted small text-uppercase fw-bold">Model Name</Form.Label>
-              <Form.Control 
-                className="custom-input"
-                type="text" 
-                name="model" 
-                placeholder="Ex: Land Cruiser" 
-                value={carData.model} 
-                onChange={handleChange} 
-                required 
-              />
+              <Form.Label className="text-white">Model Name</Form.Label>
+              <Form.Control className="custom-input" type="text" name="model" value={carData.model} onChange={handleChange} required />
             </Form.Group>
           </Col>
         </Row>
 
         <Row>
-          {/* Year Input */}
           <Col md={6}>
             <Form.Group className="mb-3">
-              <Form.Label className="text-muted small text-uppercase fw-bold">Manufactured Year</Form.Label>
-              <Form.Control 
-                className="custom-input"
-                type="number" 
-                name="year" 
-                placeholder="Ex: 2024" 
-                value={carData.year} 
-                onChange={handleChange} 
-                required 
-              />
+              <Form.Label className="text-white">Year</Form.Label>
+              <Form.Control className="custom-input" type="number" name="year" value={carData.year} onChange={handleChange} required />
             </Form.Group>
           </Col>
-
-          {/* Price Input */}
           <Col md={6}>
             <Form.Group className="mb-3">
-              <Form.Label className="text-muted small text-uppercase fw-bold">Price (LKR)</Form.Label>
-              <Form.Control 
-                className="custom-input"
-                type="number" 
-                name="price" 
-                placeholder="Ex: 45000000" 
-                value={carData.price} 
-                onChange={handleChange} 
-                required 
-              />
+              <Form.Label className="text-white">Price (LKR)</Form.Label>
+              <Form.Control className="custom-input" type="number" name="price" value={carData.price} onChange={handleChange} required />
             </Form.Group>
           </Col>
         </Row>
 
-        {/* Image URL Input */}
+        {/* Multiple Image Input */}
         <Form.Group className="mb-4">
-          <Form.Label className="text-muted small text-uppercase fw-bold">Image URL Link</Form.Label>
+          <Form.Label className="text-white">Image URLs (Max 5)</Form.Label>
           <Form.Control 
             className="custom-input"
-            type="text" 
-            name="imageUrl" 
-            placeholder="Paste the image address here..." 
-            value={carData.imageUrl} 
+            as="textarea" 
+            rows={3}
+            name="imageUrls" 
+            placeholder="Paste image links separated by commas (e.g. link1.jpg, link2.jpg)" 
+            value={carData.imageUrls} 
             onChange={handleChange} 
           />
-          <Form.Text className="text-muted small">
-            Tip: Right-click an image on Google and select "Copy Image Address"
+          <Form.Text className="text-muted">
+            Separate multiple links with a comma (,). Only first 5 will be saved.
           </Form.Text>
         </Form.Group>
 
-        {/* Submit Button */}
-        <Button type="submit" className="w-100 btn-automobile py-3 shadow-lg">
-          ADD VEHICLE TO SYSTEM
-        </Button>
+        <Button type="submit" className="w-100 btn-automobile py-3">ADD VEHICLE</Button>
       </Form>
     </>
   );
