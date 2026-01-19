@@ -10,7 +10,6 @@ const NavBar = ({ searchTerm, setSearchTerm }) => {
 
   return (
     // 'sticky="top"' keeps the navbar fixed at the top when scrolling
-    // 'modern-navbar' is our custom CSS class for the glass effect
     <Navbar expand="lg" variant="dark" sticky="top" className="modern-navbar py-3">
       <Container>
         
@@ -30,6 +29,7 @@ const NavBar = ({ searchTerm, setSearchTerm }) => {
           {/* --- NAVIGATION LINKS --- */}
           <Nav className="mx-auto"> {/* 'mx-auto' centers the links */}
             
+            {/* 1. HOME LINK */}
             <Nav.Link 
               as={Link} 
               to="/" 
@@ -38,6 +38,16 @@ const NavBar = ({ searchTerm, setSearchTerm }) => {
               Home
             </Nav.Link>
 
+            {/* 2. ABOUT US LINK (Newly Added) */}
+            <Nav.Link 
+              as={Link} 
+              to="/about" 
+              className={`nav-link-custom ${location.pathname === '/about' ? 'active' : ''}`}
+            >
+              About Us
+            </Nav.Link>
+
+            {/* 3. ADMIN PANEL LINK */}
             <Nav.Link 
               as={Link} 
               to="/login" 

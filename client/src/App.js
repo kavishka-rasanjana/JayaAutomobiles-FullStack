@@ -6,6 +6,7 @@ import './App.css'; // Import Custom Premium Styles
 // Import Components
 import NavBar from './components/NavBar';
 import Home from './components/Home';
+import About from './components/About'; // Newly added About page
 import Login from './components/Login';
 import Admin from './components/Admin';
 import Footer from './components/Footer';
@@ -33,6 +34,9 @@ function App() {
           {/* Home Page: Receives searchTerm to filter cars */}
           <Route path="/" element={<Home searchTerm={searchTerm} />} />
           
+          {/* About Us Page */}
+          <Route path="/about" element={<About />} />
+
           {/* Admin Login Page */}
           <Route path="/login" element={<Login />} />
           
